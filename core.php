@@ -6,9 +6,9 @@ if (!defined('IN_SYS')) {
 }
 $ROOT = __DIR__;
 
-$rooturl = $_SERVER['HTTP_HOST'];
-$domain = preg_replace('/^www\./', '', $rooturl);
-
+// $rooturl = $_SERVER['HTTP_HOST'];
+// $domain = preg_replace('/^www\./', '', $rooturl);
+$domain = "uiisc.com";
 $static_release = '1559728996134';
 $brandName = "UIISC";
 $iFastNetAff = 19474;
@@ -17,6 +17,6 @@ $title = "UIISC";
 $title_s = "UIISC";
 $author = 'Crogram Inc.';
 $description = "uiisc, freewebhost, webhost, Crogram, iFastNet";
-$google_site_verification = "5O6Wxt0gIyGb7btMuXiQqddZJ516n-xBOW_9RLMBeSY";
+// $google_site_verification = "5O6Wxt0gIyGb7btMuXiQqddZJ516n-xBOW_9RLMBeSY";
 
 include_once "{$ROOT}/lib/language.php";
