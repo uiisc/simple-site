@@ -2,14 +2,14 @@
 
     define('IN_SYS', true);
     require_once "core.php";
-    $title = $title . ' - ' . $LANG['privacy_policy'];
+    $title = $title . ' - ' . I18N('privacy_policy');
 
 ?>
 <?php include("include/header.php"); ?>
 
 <div class="container">
     <div class="page-header">
-        <h1 class="text-center"><?php echo $LANG['privacy_policy']; ?></a></h1>
+        <h1 class="text-center"><?php echo I18N('privacy_policy'); ?></a></h1>
         <p class="text-center">Privacy policy information</p>
     </div>
 </div>

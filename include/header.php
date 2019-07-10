@@ -15,7 +15,8 @@ if (!defined('IN_SYS')) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <meta name="description" content="<?php echo $description; ?>">
     <meta name="author" content="<?php echo $author; ?>">
-    <?php if (!empty($google_site_verification)) { ?><meta name="google-site-verification" content="<?php echo $google_site_verification; ?>" />
+<?php if (!empty($google_site_verification)) { ?>
+    <meta name="google-site-verification" content="<?php echo $google_site_verification; ?>" />
 <?php } ?>
     <link href="favicon.ico?_=<?php echo $static_release; ?>" rel="icon">
     <link href="assets/bootstrap/css/bootstrap.min.css?_=<?php echo $static_release; ?>" rel="stylesheet">
@@ -47,15 +48,15 @@ if (!defined('IN_SYS')) {
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                <li><a href="index.php"><?php echo $LANG['home']; ?></a></li>
-                <li><a href="solution.php"><?php echo $LANG['solution']; ?></a></li>
-                <li><a href="support.php"><?php echo $LANG['support']; ?></a></li>
-                <li><a href="contact.php"><?php echo $LANG['contact']; ?></a></li>
-                <li><a href="about.php"><?php echo $LANG['about']; ?></a></li>
+                    <li><a href="index.php"><?php echo I18N('home'); ?></a></li>
+                    <li><a href="solution.php"><?php echo I18N('solution'); ?></a></li>
+                    <li><a href="support.php"><?php echo I18N('support'); ?></a></li>
+                    <li><a href="contact.php"><?php echo I18N('contact'); ?></a></li>
+                    <li><a href="about.php"><?php echo I18N('about'); ?></a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="login.php"><?php echo $LANG['login']; ?></a></li>
-                    <li><a href="register.php"><?php echo $LANG['register']; ?></a></li>
+                    <li><a href="login.php"><?php echo I18N('login'); ?></a></li>
+                    <li><a href="register.php"><?php echo I18N('register'); ?></a></li>
                 </ul>
             </div>
         </div>

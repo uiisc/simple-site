@@ -18,8 +18,8 @@ if (!defined('IN_SYS')) {
             </ul>
             <ul class="legal navbar-right list-inline text-center">
                 <li><a href="about.php"><?php echo I18N('about'); ?></a></li>
-                <li><a href="terms.php"><?php echo $LANG['tos']; ?></a></li>
-                <li><a href="privacy.php"><?php echo $LANG['privacy_policy']; ?></a></li>
+                <li><a href="terms.php"><?php echo I18N('tos'); ?></a></li>
+                <li><a href="privacy.php"><?php echo I18N('privacy_policy'); ?></a></li>
                 <li class="dropup">
                     <div class="dropdown-toggle" id="changelanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="glyphicon glyphicon-globe"></span>
@@ -40,7 +40,7 @@ if (!defined('IN_SYS')) {
 <script src="assets/jquery/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/js/common.js?_=<?php echo $static_release; ?>"></script>
-<?php include("google_analytics.php"); ?>
+<?php if (!empty($google_site_verification)) { include("google_analytics.php");};?>
 
 </body>
 

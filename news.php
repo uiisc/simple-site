@@ -1,7 +1,7 @@
 <?php
     define('IN_SYS', true);
     require_once ("core.php");
-    $title = $title . ' - ' . $LANG['news'];
+    $title = $title . ' - ' . I18N('news');
 ?>
 <?php include ("include/header.php"); ?>
 
